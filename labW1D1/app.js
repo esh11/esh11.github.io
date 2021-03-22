@@ -3,7 +3,9 @@
 "use strict";
 
 function pow(x, n) {
-	return x * n;
+	if(n===0){
+		return 1;
+	}else return x * pow(x ,n-1);
 }
 
 function add2(n1, n2) {
@@ -30,6 +32,20 @@ function add(...args) {
 	0 - 59   NC
 */
 function computeGrade(grades) {
-	return "???";
+	for(let i = 0; i < grades.length;i++){
+	if(grades[i] >= 90){
+		return "A";
+	}
+	else if(grades[i]>=80){
+			return "B";
+	}else if(grades[i] >= 70){
+		return "C";
+	}else if(grades[i]>=60){
+		return "D";
+	}else {
+		return "NC";
+		}
+	}	
 }
-
+	
+module.exports = {pow,add,add2,computeGrade};

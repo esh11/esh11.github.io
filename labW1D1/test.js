@@ -52,4 +52,6 @@ function mochaTests() {
         it("Compute letter grade", function () {
             assert.equal(computeGrade([59,59,59]), "NC");
         });
-    });        }
+    });       
+ }
+
