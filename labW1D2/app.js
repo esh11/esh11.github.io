@@ -9,10 +9,11 @@ function load() {
 
 // See tests.js for behavior
 function nameString(obj) {
+	
 	let str = [];
-	if(obj == true){
+	if(obj=== {}){
 		return "object has no properties";
-	}else if (obj ==false){
+	}else if (obj == undefined){
 		return "No object passed";
 	}else if (obj === null){
 		return "null argument"
@@ -26,3 +27,4 @@ function nameString(obj) {
 
 }
 
+console.log(nameString({}))
