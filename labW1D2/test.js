@@ -5,11 +5,11 @@
 "use strict";
 
 function mochaTests() {
-    // describe("nameString", function () {
-    //     it("object has no properties", function () {
-    //         assert.equal(nameString({}), "object has no properties");
-    //     });
-	// });
+    describe("nameString", function () {
+        it("object has no properties", function () {
+            assert.equal(nameString({}), "object has no properties");
+        });
+	});
 	
     describe("nameString", function () {
         it("no object passed", function () {
