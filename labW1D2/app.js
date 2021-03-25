@@ -13,7 +13,7 @@ function nameString(obj) {
 	let str = [];
 	
 	 if (obj === undefined){
-		return "No object passed";
+		return "no object passed";
 	}else if (obj === null){
 		return "null argument"
 	}else {
@@ -28,6 +28,15 @@ function nameString(obj) {
 
 }
 
-console.log(nameString({}));
-console.log(nameString());
-console.log(nameString(null))
+
+
+
+
+
+
+
+
+
+
+
+
