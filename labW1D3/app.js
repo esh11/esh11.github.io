@@ -17,33 +17,32 @@ Creates an object that contains the following information from the "this" object
 }	
 */
 function analyzer() {
-	this.numProperties = function(){
+	
 		let count = 0;
-		for(let pro in person){
+		for(let pro in this){
 			count++;
 		}
-		return count;
-	};
-	this.cntShortName= function(){
-		let count = 0;
-		for (let key in person){
+		
+		let count1 = 0;
+		for (let key in this){
 			if(key.length < 3){
-				count++;
+				count1++;
 			}
+			
 		}
-		return count;
-	};
-	this.cntReferences = function(){
-		let count = 0;
-		for (let key in person){
-			if(type0f(person.key)=== "Object"){
-				count++;
+		let count2 = 0;
+		for (let key in this){
+			if(typeof(this[key]) === "object"){
+				count2++;
 			}
 		}
 		
-		return count;
-	};
+		
+	return {numProperties:count,cntShortName:count1,cntReference:count2}
 }
+
+ 
+ 
 
 /* Constructor for a person object
 	Person(name, country, grades) creates object
