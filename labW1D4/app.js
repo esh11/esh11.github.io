@@ -49,17 +49,11 @@ function ArrayDemo(array) {
 
 // Makes all negative numbers of the input array positive
 function makePositive(array) {
-	
-	for(let i = 0;i<array.length;i++){
-		
+	for(let i = 0;i<array.length;i++){		
 		if(array[i]<0){
 			array[i]= Math.abs(array[i]);
-		}else{
-			array[i]=array[i];
-		}
-		
+		}		
 	}
-//	let result = array.split(".")
 	return array;	
 }
 
